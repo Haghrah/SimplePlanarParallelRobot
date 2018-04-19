@@ -47,7 +47,7 @@ class Robot(object):
         return array([eq1, eq2])
     
     def crossing_circles_inverse_c2(self, x):
-        '''For finding c3!'''
+        '''For finding c2!'''
         eq1 = (x[0] - self.c3[0]) ** 2 + (x[1] - self.c3[1]) ** 2 - self.l4 ** 2
         eq2 = (x[0] - self.o2[0]) ** 2 + (x[1] - self.o2[1]) ** 2 - self.l2 ** 2
         return array([eq1, eq2])
@@ -114,24 +114,4 @@ if __name__ == "__main__":
     y = 2
     myRobot.inverse_kinematics((x, y))
     myRobot.plot()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
